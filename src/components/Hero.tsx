@@ -196,14 +196,14 @@ export default function Hero({ onExploreTap }: HeroProps) {
                 {taglineLetters.map((letter, i) => (
                   <motion.span
                     key={i}
-                    initial={{ y: -80, opacity: 0, rotate: -20, scale: 0.5 }}
-                    animate={{ y: 0, opacity: 1, rotate: [15, -10, 5, 0], scale: [1.3, 0.9, 1] }}
+                    initial={{ y: -80, opacity: 0, rotate: -15, scale: 0.6 }}
+                    animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
                     transition={{
                       duration: 0.7,
                       delay: 0.1 + i * 0.04,
                       type: 'spring',
                       stiffness: 260,
-                      damping: 14,
+                      damping: 12,
                     }}
                     onAnimationComplete={() => soundFX.playPlop()}
                     className={
@@ -296,8 +296,8 @@ export default function Hero({ onExploreTap }: HeroProps) {
               {/* Stop-Motion Assembly Sequence for Giant Sundae */}
               <motion.div
                 initial={{ y: -350, opacity: 0, scaleY: 0.6 }}
-                animate={{ y: 0, opacity: 1, scaleY: [1.25, 0.85, 1.1, 0.95, 1] }}
-                transition={{ duration: 1.2, delay: 0.3, type: 'spring', stiffness: 200, damping: 15 }}
+                animate={{ y: 0, opacity: 1, scaleY: 1 }}
+                transition={{ duration: 1.2, delay: 0.3, type: 'spring', stiffness: 200, damping: 12 }}
                 className="relative w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-500"
               >
                 <Image
@@ -310,7 +310,7 @@ export default function Hero({ onExploreTap }: HeroProps) {
 
                 {/* Interactive Cherry at Top (Easter Egg Trigger!) */}
                 <motion.div
-                  whileHover={{ scale: 1.3, rotate: [0, -15, 15, 0] }}
+                  whileHover={{ scale: 1.3, rotate: -15 }}
                   whileTap={{ scale: 0.8 }}
                   onClick={handleCherryClick}
                   className="absolute top-[8%] left-[45%] w-16 h-16 rounded-full cursor-pointer z-30 flex items-center justify-center group/cherry"

@@ -33,8 +33,9 @@ export default function BestSellers({ onSelectItem }: BestSellersProps) {
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <motion.div
             initial={{ opacity: 0, scale: 0.7 }}
-            whileInView={{ opacity: 1, scale: [1.2, 1] }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
+            transition={{ type: 'spring', stiffness: 200, damping: 15 }}
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-100 text-rose-700 font-extrabold text-xs tracking-wider uppercase shadow-sm border border-rose-200"
           >
             <Crown className="w-4 h-4 text-amber-500 fill-amber-400 animate-bounce" />
@@ -74,7 +75,7 @@ export default function BestSellers({ onSelectItem }: BestSellersProps) {
                   stiffness: 180,
                   damping: 14,
                 }}
-                whileHover={{ y: -12, rotate: [-1, 2, 0] }}
+                whileHover={{ y: -12, rotate: 2 }}
                 whileTap={{ scale: 0.94 }}
                 onMouseEnter={() => soundFX.playPop()}
                 onClick={() => {
