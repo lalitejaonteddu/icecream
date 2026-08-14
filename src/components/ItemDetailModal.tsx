@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, PanInfo } from 'framer-motion';
-import { X, Star, Plus, Minus, MessageCircle, Phone, Flame, Crown, ShieldCheck, Sparkles, ArrowLeft } from 'lucide-react';
+import { X, Star, Plus, Minus, MessageCircle, Phone, ShieldCheck, Sparkles, ArrowLeft } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { MenuItem } from '../data/menuData';
 
@@ -11,15 +11,6 @@ interface ItemDetailModalProps {
   item: MenuItem | null;
   onClose: () => void;
 }
-
-const ITEM_IMAGES: Record<string, string> = {
-  'nutty-hub': '/assets/nutty_hub_sundae.png',
-  'thiranga-lassi': '/assets/thiranga_lassi.png',
-  'fruit-beast': '/assets/storefront.jpg',
-  'chocolate-overload': '/assets/counter_interior.jpg',
-  'you-must-be-crazy': '/assets/cup_pyramids.jpg',
-  'bdc-pastry': '/assets/menu_board.jpg',
-};
 
 export default function ItemDetailModal({ item, onClose }: ItemDetailModalProps) {
   const [quantity, setQuantity] = useState(1);
@@ -45,7 +36,7 @@ export default function ItemDetailModal({ item, onClose }: ItemDetailModalProps)
 
   if (!item) return null;
 
-  const imageSrc = ITEM_IMAGES[item.id] || item.image;
+  const imageSrc = item.image;
   const totalPrice = item.price * quantity;
 
   // Swipe / Drag to dismiss gesture handler
@@ -109,14 +100,14 @@ export default function ItemDetailModal({ item, onClose }: ItemDetailModalProps)
             <div className="absolute top-4 inset-x-4 z-20 flex justify-between items-center pointer-events-none">
               <button
                 onClick={onClose}
-                className="pointer-events-auto p-2.5 rounded-full bg-stone-900/70 hover:bg-stone-900 text-white backdrop-blur-md shadow-lg transition-all"
+                className="pointer-events-auto p-2.5 rounded-full bg-stone-900/70 hover:bg-stone-900 text-white backdrop-blur-md shadow-lg transition-all cursor-pointer"
                 aria-label="Back"
               >
                 <ArrowLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={onClose}
-                className="pointer-events-auto p-2.5 rounded-full bg-stone-900/70 hover:bg-stone-900 text-white backdrop-blur-md shadow-lg transition-all"
+                className="pointer-events-auto p-2.5 rounded-full bg-stone-900/70 hover:bg-stone-900 text-white backdrop-blur-md shadow-lg transition-all cursor-pointer"
                 aria-label="Close"
               >
                 <X className="w-5 h-5" />
@@ -239,7 +230,7 @@ export default function ItemDetailModal({ item, onClose }: ItemDetailModalProps)
                   <motion.button
                     whileTap={{ scale: 0.85 }}
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="w-9 h-9 rounded-xl bg-white text-stone-800 shadow-sm flex items-center justify-center font-bold hover:bg-rose-50 hover:text-rose-600 transition-colors"
+                    className="w-9 h-9 rounded-xl bg-white text-stone-800 shadow-sm flex items-center justify-center font-bold hover:bg-rose-50 hover:text-rose-600 transition-colors cursor-pointer"
                   >
                     <Minus className="w-4 h-4" />
                   </motion.button>
@@ -249,7 +240,7 @@ export default function ItemDetailModal({ item, onClose }: ItemDetailModalProps)
                   <motion.button
                     whileTap={{ scale: 0.85 }}
                     onClick={() => setQuantity(quantity + 1)}
-                    className="w-9 h-9 rounded-xl bg-white text-stone-800 shadow-sm flex items-center justify-center font-bold hover:bg-rose-50 hover:text-rose-600 transition-colors"
+                    className="w-9 h-9 rounded-xl bg-white text-stone-800 shadow-sm flex items-center justify-center font-bold hover:bg-rose-50 hover:text-rose-600 transition-colors cursor-pointer"
                   >
                     <Plus className="w-4 h-4" />
                   </motion.button>
@@ -270,7 +261,7 @@ export default function ItemDetailModal({ item, onClose }: ItemDetailModalProps)
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.96 }}
                 onClick={triggerConfettiAndOrder}
-                className="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-600 to-emerald-600 text-white font-heading font-extrabold text-base shadow-xl shadow-emerald-500/35 hover:shadow-emerald-500/60 flex items-center justify-center gap-2.5 transition-all animate-pulse-glow border border-emerald-300/40 cursor-pointer"
+                className="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-600 to-emerald-600 text-white font-heading font-extrabold text-base shadow-xl shadow-emerald-500/35 hover:shadow-emerald-500/60 flex items-center justify-center gap-2.5 transition-all border border-emerald-300/40 cursor-pointer"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
                 <span>Order {quantity}x via WhatsApp</span>

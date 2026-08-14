@@ -12,14 +12,6 @@ interface BestSellersProps {
   onSelectItem: (item: MenuItem) => void;
 }
 
-const BEST_SELLER_IMAGES: Record<string, string> = {
-  'nutty-hub': '/assets/nutty_hub_sundae.png',
-  'fruit-beast': '/assets/storefront.jpg',
-  'chocolate-overload': '/assets/counter_interior.jpg',
-  'you-must-be-crazy': '/assets/cup_pyramids.jpg',
-  'bdc-pastry': '/assets/menu_board.jpg',
-};
-
 export default function BestSellers({ onSelectItem }: BestSellersProps) {
   return (
     <section id="bestsellers" className="py-16 sm:py-24 bg-gradient-to-b from-white via-rose-50/50 to-amber-50/40 relative overflow-hidden">
@@ -59,8 +51,6 @@ export default function BestSellers({ onSelectItem }: BestSellersProps) {
         {/* Mobile Horizontal Carousel & Desktop Grid */}
         <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 pt-4 px-2 -mx-4 sm:mx-0 scrollbar-none sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
           {BEST_SELLERS.map((item: MenuItem, index: number) => {
-            const imageSrc = BEST_SELLER_IMAGES[item.id] || item.image;
-            
             return (
               <motion.div
                 key={item.id}
@@ -99,7 +89,7 @@ export default function BestSellers({ onSelectItem }: BestSellersProps) {
                     className="relative w-full h-56 rounded-2xl overflow-hidden mb-4 mt-2 shadow-md group-hover:shadow-2xl transition-all duration-300"
                   >
                     <Image
-                      src={imageSrc}
+                      src={item.image}
                       alt={item.name}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"

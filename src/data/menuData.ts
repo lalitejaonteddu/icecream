@@ -18,7 +18,7 @@ export const BEST_SELLERS: MenuItem[] = [
     category: 'bestsellers',
     price: 220,
     description: 'Loaded dry-fruit feast topped with roasted almonds, cashews, pistachios, honey drizzle & dual scoops of vanilla bean gelato.',
-    image: '/assets/shelves_freezers.jpg',
+    image: '/assets/nutty_hub_sundae.png',
     badge: '👑 #1 Best Seller',
     rating: 4.9,
     popular: true,
@@ -30,7 +30,7 @@ export const BEST_SELLERS: MenuItem[] = [
     category: 'bestsellers',
     price: 260,
     description: 'Monster bowl overflowing with fresh dragon fruit, kiwi, mango chunks, pomegranate, and cold vanilla cream.',
-    image: '/assets/storefront.jpg',
+    image: '/assets/fruit_beast_sundae.png',
     badge: '🔥 Trending',
     rating: 4.9,
     popular: true,
@@ -42,7 +42,7 @@ export const BEST_SELLERS: MenuItem[] = [
     category: 'bestsellers',
     price: 240,
     description: 'Dark Belgian chocolate ice cream centered with warm gooey brownie chunks, choco-chips, and hot chocolate fudge.',
-    image: '/assets/counter_interior.jpg',
+    image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=800&q=80',
     badge: '⭐ Chef\'s Choice',
     rating: 4.8,
     popular: true,
@@ -54,7 +54,7 @@ export const BEST_SELLERS: MenuItem[] = [
     category: 'bestsellers',
     price: 280,
     description: 'Wild multi-flavor surprise sundae with popping candy, waffle crisp, rainbow sprinkles & tri-color fruit syrup.',
-    image: '/assets/cup_pyramids.jpg',
+    image: 'https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=800&q=80',
     badge: '🎉 Must Try',
     rating: 5.0,
     popular: true,
@@ -66,7 +66,7 @@ export const BEST_SELLERS: MenuItem[] = [
     category: 'bestsellers',
     price: 190,
     description: 'Belgian Double Chocolate Pastry paired with a silky scoop of Madagascar vanilla bean ice cream.',
-    image: '/assets/menu_board.jpg',
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
     badge: '💎 House Special',
     rating: 4.8,
     popular: true,
@@ -85,9 +85,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'lassis',
     price: 120,
     description: 'Signature tri-color layered thick Lassi featuring pistachio green, classic sweet curd, and saffron mango flavors.',
-    image: '/assets/cup_pyramids.jpg',
+    image: '/assets/thiranga_lassi.png',
     badge: '🌈 Tri-Color Special',
-    rating: 4.9
+    rating: 4.9,
+    ingredients: ['Pistachio', 'Sweet Curd', 'Mango Pulp', 'Saffron']
   },
   {
     id: 'sweet-lassi',
@@ -95,9 +96,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'lassis',
     price: 90,
     description: 'Traditional churned sweet yoghurt drink infused with fresh cardamom and malai.',
-    image: '/assets/counter_interior.jpg',
+    image: 'https://images.unsplash.com/photo-1571006682885-333e6f6630f9?auto=format&fit=crop&w=800&q=80',
     badge: 'Classic',
-    rating: 4.7
+    rating: 4.7,
+    ingredients: ['Fresh Yoghurt', 'Cardamom', 'Malai', 'Sugar']
   },
   {
     id: 'salt-lassi',
@@ -105,18 +107,20 @@ export const FULL_MENU: MenuItem[] = [
     category: 'lassis',
     price: 90,
     description: 'Refreshing savory Lassi spiced with roasted cumin, rock salt & fresh coriander.',
-    image: '/assets/storefront.jpg',
-    rating: 4.6
+    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
+    rating: 4.6,
+    ingredients: ['Yoghurt', 'Roasted Cumin', 'Rock Salt', 'Mint']
   },
   {
     id: 'punjabi-lassi',
     name: 'Punjabi Lassi',
     category: 'lassis',
     price: 120,
-    description: 'Extra thick malai-topped Punjabi style creamy sweet yoghurt.',
-    image: '/assets/shelves_freezers.jpg',
+    description: 'Extra thick malai-topped Punjabi style creamy sweet yoghurt in tall glass.',
+    image: 'https://images.unsplash.com/photo-1626078436896-e26090e96417?auto=format&fit=crop&w=800&q=80',
     badge: 'Extra Creamy',
-    rating: 4.8
+    rating: 4.8,
+    ingredients: ['Thick Yoghurt', 'Heavy Cream', 'Cardamom']
   },
   {
     id: 'badam-lassi',
@@ -124,8 +128,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'lassis',
     price: 120,
     description: 'Nutritious almond infused lassi blended with crushed nuts & saffron strands.',
-    image: '/assets/menu_board.jpg',
-    rating: 4.7
+    image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80',
+    badge: 'Saffron Badam',
+    rating: 4.7,
+    ingredients: ['Crushed Almonds', 'Saffron', 'Rich Milk', 'Pistachios']
   },
   {
     id: 'patiyala-lassi',
@@ -133,8 +139,9 @@ export const FULL_MENU: MenuItem[] = [
     category: 'lassis',
     price: 120,
     description: 'King-sized thick sweet lassi served in traditional style.',
-    image: '/assets/cup_pyramids.jpg',
-    rating: 4.8
+    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80',
+    rating: 4.8,
+    ingredients: ['Churned Yoghurt', 'Malai', 'Rose Essence']
   },
   {
     id: 'nawabi-lassi',
@@ -142,9 +149,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'lassis',
     price: 120,
     description: 'Royal lassi prepared with saffron, kewra water, and crushed pistachios.',
-    image: '/assets/counter_interior.jpg',
+    image: 'https://images.unsplash.com/photo-1600718374662-0483d2b9da44?auto=format&fit=crop&w=800&q=80',
     badge: 'Royal',
-    rating: 4.9
+    rating: 4.9,
+    ingredients: ['Saffron', 'Kewra Water', 'Pistachios', 'Cream']
   },
   {
     id: 'mango-lassi',
@@ -152,9 +160,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'lassis',
     price: 120,
     description: 'Rich Alphonso mango pulp churned with velvety fresh yoghurt.',
-    image: '/assets/storefront.jpg',
+    image: 'https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=800&q=80',
     badge: '🥭 Summer Pick',
-    rating: 4.9
+    rating: 4.9,
+    ingredients: ['Alphonso Mango', 'Fresh Yoghurt', 'Cardamom']
   },
 
   // Desserts
@@ -164,9 +173,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'desserts',
     price: 250,
     description: 'Signature Hyderabadi sweet delicacy featuring stewed sweet apricots, rich cream layers, and velvety vanilla scoop.',
-    image: '/assets/storefront.jpg',
+    image: 'https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=800&q=80',
     badge: '🔥 Hyderabadi Legend',
-    rating: 4.9
+    rating: 4.9,
+    ingredients: ['Stewed Apricots', 'Fresh Cream', 'Vanilla Gelato']
   },
   {
     id: 'kurbani-ka-meeta-ice-cream',
@@ -174,9 +184,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'desserts',
     price: 190,
     description: 'Authentic Qurbani sweet stewed dried apricots paired with a rich vanilla ice cream scoop.',
-    image: '/assets/counter_interior.jpg',
+    image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80',
     badge: '👑 Heritage',
-    rating: 4.9
+    rating: 4.9,
+    ingredients: ['Qurbani Apricots', 'Vanilla Bean Scoop', 'Almonds']
   },
   {
     id: 'double-ka-meeta',
@@ -184,8 +195,9 @@ export const FULL_MENU: MenuItem[] = [
     category: 'desserts',
     price: 160,
     description: 'Crisp ghee-fried bread soaked in saffron cardamom rabri syrup, topped with almonds.',
-    image: '/assets/shelves_freezers.jpg',
-    rating: 4.7
+    image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80',
+    rating: 4.7,
+    ingredients: ['Ghee Fried Bread', 'Saffron Rabri', 'Almonds', 'Cardamom']
   },
   {
     id: 'kaddu-ka-kheer',
@@ -193,8 +205,9 @@ export const FULL_MENU: MenuItem[] = [
     category: 'desserts',
     price: 160,
     description: 'Traditional rich bottle-gourd milk pudding cooked with sago, khoya & cashews.',
-    image: '/assets/menu_board.jpg',
-    rating: 4.8
+    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80',
+    rating: 4.8,
+    ingredients: ['Bottle Gourd', 'Milk', 'Khoya', 'Cashews', 'Sago']
   },
 
   // Fresh Fruit Juices
@@ -204,9 +217,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'juices',
     price: 180,
     description: 'Cold-pressed 100% pure fresh pomegranate juice packed with natural antioxidants.',
-    image: '/assets/menu_board.jpg',
+    image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=800&q=80',
     badge: '100% Pure',
-    rating: 4.9
+    rating: 4.9,
+    ingredients: ['Fresh Pomegranate']
   },
   {
     id: 'watermelon-juice',
@@ -214,8 +228,9 @@ export const FULL_MENU: MenuItem[] = [
     category: 'juices',
     price: 180,
     description: 'Hydrating fresh cold-pressed watermelon juice served chilled.',
-    image: '/assets/storefront.jpg',
-    rating: 4.7
+    image: 'https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?auto=format&fit=crop&w=800&q=80',
+    rating: 4.7,
+    ingredients: ['Fresh Watermelon', 'Mint']
   },
   {
     id: 'kiwi-juice',
@@ -223,8 +238,9 @@ export const FULL_MENU: MenuItem[] = [
     category: 'juices',
     price: 180,
     description: 'Tangy Vitamin-C rich fresh green kiwi juice.',
-    image: '/assets/cup_pyramids.jpg',
-    rating: 4.8
+    image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b7?auto=format&fit=crop&w=800&q=80',
+    rating: 4.8,
+    ingredients: ['Fresh Green Kiwi', 'Lemon']
   },
   {
     id: 'fruit-punch',
@@ -232,9 +248,10 @@ export const FULL_MENU: MenuItem[] = [
     category: 'juices',
     price: 180,
     description: 'Exotic blend of fresh tropical fruits with a hint of mint.',
-    image: '/assets/counter_interior.jpg',
+    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80',
     badge: 'Popular',
-    rating: 4.8
+    rating: 4.8,
+    ingredients: ['Orange', 'Pineapple', 'Mango', 'Mint']
   },
   {
     id: 'fruit-bowl',
@@ -242,8 +259,9 @@ export const FULL_MENU: MenuItem[] = [
     category: 'juices',
     price: 250,
     description: 'Assorted freshly chopped seasonal fruits with natural honey glaze.',
-    image: '/assets/shelves_freezers.jpg',
-    rating: 4.9
+    image: 'https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=800&q=80',
+    rating: 4.9,
+    ingredients: ['Kiwi', 'Berry', 'Mango', 'Dragon Fruit', 'Honey']
   },
   {
     id: 'fresh-lime-soda',
@@ -251,7 +269,8 @@ export const FULL_MENU: MenuItem[] = [
     category: 'juices',
     price: 80,
     description: 'Sparkling fizzy chilled soda with fresh lime juice.',
-    image: '/assets/storefront.jpg',
-    rating: 4.6
+    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80',
+    rating: 4.6,
+    ingredients: ['Fresh Lime', 'Sparkling Soda', 'Mint', 'Black Salt']
   }
 ];
