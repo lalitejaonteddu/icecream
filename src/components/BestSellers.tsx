@@ -20,21 +20,25 @@ const LASSIS_ITEMS: MenuItem[] = [
 ];
 
 const MILKSHAKES_ITEMS: MenuItem[] = [
-  { name: 'Strawberry Milkshake', price: '₹180' },
-  { name: 'Mango Milkshake', price: '₹180' },
-  { name: 'Chocolate Milkshake', price: '₹180' },
-  { name: 'Vanilla Milkshake', price: '₹180' },
-  { name: 'Butter Scotch Milkshake', price: '₹180' },
-  { name: 'Pista Milkshake', price: '₹180' },
+  { name: 'Strawberry', price: '₹160' },
+  { name: 'Mango', price: '₹160' },
+  { name: 'Chocolate', price: '₹160' },
+  { name: 'Vanilla', price: '₹160' },
+  { name: 'Butter Scotch', price: '₹160' },
+  { name: 'Pista', price: '₹160' },
+  { name: 'Orange', price: '₹140' },
+  { name: 'Chaco Pie', price: '₹170' },
 ];
 
 const THICKSHAKES_ITEMS: MenuItem[] = [
   { name: 'Chocolate Oreo', price: '₹190' },
-  { name: 'Kit Kat Thickshake', price: '₹190' },
+  { name: 'Kit Kat', price: '₹190' },
   { name: 'Honey Five Star', price: '₹190' },
-  { name: 'Dry Fruit Thickshake', price: '₹190' },
+  { name: 'Dry Fruit', price: '₹190' },
+  { name: 'Snickers', price: '₹190' },
   { name: 'Choco Brownie', price: '₹190' },
   { name: 'Ferrero Rocher', price: '₹190' },
+  { name: 'Nutella Oreo', price: '₹190' },
 ];
 
 const JUICES_ITEMS: MenuItem[] = [
