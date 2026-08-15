@@ -61,12 +61,12 @@ const MOCKTAILS_ITEMS: MenuItem[] = [
 ];
 
 const STONE_ICECREAM_ITEMS: MenuItem[] = [
-  { name: 'Candy Tasty (Kids)', price: '₹190' },
-  { name: 'Nutty Hub Concept', price: '₹250' },
-  { name: 'Fruit Fiesta Concept', price: '₹250' },
-  { name: 'Chocolate Overload', price: '₹250' },
-  { name: 'Hot Lava Blast', price: '₹250' },
-  { name: 'Mind Mellow Special', price: '₹290' },
+  { name: 'Candy Tasty', price: '₹190' },
+  { name: 'Boomer Gam', price: '₹190' },
+  { name: 'Magic Popings', price: '₹190' },
+  { name: 'Nutty Hub', price: '₹250' },
+  { name: 'Filled with Nuts', price: '₹250' },
+  { name: 'Dry Fruit Mania', price: '₹250' },
 ];
 
 const REGULAR_ICECREAM_ITEMS: MenuItem[] = [
