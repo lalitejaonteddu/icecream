@@ -34,9 +34,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link
           rel="preload"
+          href="/assets/hero_3d_cone_clean_transparent_mobile.webp"
+          as="image"
+          type="image/webp"
+          media="(max-width: 640px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
           href="/assets/hero_3d_cone_clean_transparent.webp"
           as="image"
           type="image/webp"
+          media="(min-width: 641px)"
           fetchPriority="high"
         />
       </head>

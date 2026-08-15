@@ -80,22 +80,25 @@ export default function Hero() {
       </div>
 
       {/* Hero Ice Cream Visual Resting Cleanly at Bottom of Viewport */}
-      <motion.div
-        initial={{ y: 80, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.7, type: 'spring', stiffness: 120 }}
-        className="mt-10 relative w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center items-end z-10 -mb-2"
-      >
-        <img
-          src="/assets/hero_3d_cone_clean_transparent.webp"
-          alt="Colour Ice Creams 3D Treat Cone"
-          width={440}
-          height={440}
-          loading="eager"
-          fetchPriority="high"
-          className="w-auto max-h-[360px] sm:max-h-[440px] object-contain filter drop-shadow-[0_15px_25px_rgba(59,42,26,0.25)]"
-        />
-      </motion.div>
+      <div className="mt-10 relative w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center items-end z-10 -mb-2">
+        <picture>
+          <source
+            media="(max-width: 640px)"
+            srcSet="/assets/hero_3d_cone_clean_transparent_mobile.webp"
+            type="image/webp"
+          />
+          <img
+            src="/assets/hero_3d_cone_clean_transparent.webp"
+            alt="Colour Ice Creams 3D Treat Cone"
+            width={440}
+            height={440}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="w-auto max-h-[360px] sm:max-h-[440px] object-contain filter drop-shadow-[0_15px_25px_rgba(59,42,26,0.25)]"
+          />
+        </picture>
+      </div>
     </section>
   );
 }
