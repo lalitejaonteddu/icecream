@@ -50,15 +50,6 @@ const SUNDAES_ITEMS: MenuItem[] = [
   { name: 'Death By Chocolate', price: '₹200' },
 ];
 
-const FALOODAS_ITEMS: MenuItem[] = [
-  { name: 'Royal Rose Falooda', price: '₹150' },
-  { name: 'Mango Rabdi Falooda', price: '₹170' },
-  { name: 'Dry Fruit Kulfi Slice', price: '₹120' },
-  { name: 'Matka Kulfi Special', price: '₹130' },
-  { name: 'Kesar Pista Falooda', price: '₹160' },
-  { name: 'Chocolate Fudge Sundae', price: '₹180' },
-];
-
 export default function BestSellers() {
   return (
     <section
@@ -315,50 +306,6 @@ export default function BestSellers() {
                 className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#3B2A1A] hover:underline"
               >
                 Order Sundaes →
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Card 6: Golden Yellow — Faloodas & Kulfis */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="bg-[#F0B23C] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
-          >
-            <div>
-              <div className="flex justify-center mb-6 pt-2">
-                <img
-                  src="/assets/giant_hero_3d_sundae.png"
-                  alt="Falooda glass icon"
-                  className="w-28 h-36 object-contain drop-shadow-xl"
-                />
-              </div>
-
-              <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
-                Faloodas & Kulfis
-              </h3>
-
-              <div className="space-y-3 font-quicksand font-semibold text-base text-[#3B2A1A]">
-                {FALOODAS_ITEMS.map((item, idx) => (
-                  <div key={idx} className="flex items-baseline justify-between">
-                    <span className="shrink-0">{item.name}</span>
-                    <span className="flex-1 mx-2 border-b-2 border-dashed border-[#3B2A1A]/40 opacity-70" />
-                    <span className="font-fredoka font-extrabold text-lg shrink-0">{item.price}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mt-8 pt-4 border-t border-[#3B2A1A]/20 flex justify-end">
-              <a
-                href="https://wa.me/919177235000?text=Hi%20Colour%20Ice%20Creams,%20I%20want%20to%20order%20Faloodas%20and%20Kulfis"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#3B2A1A] hover:underline"
-              >
-                Order Faloodas →
               </a>
             </div>
           </motion.div>
