@@ -4,54 +4,58 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Sparkles, Heart, Award, ShieldCheck, Smile } from 'lucide-react';
+import FramedFruitIcon from './FramedFruitIcon';
 
 const HIGHLIGHTS = [
   {
-    icon: '🍦',
-    title: '100% Pure Dairy & Gelato',
-    desc: 'Crafted with premium whole milk, real cream, and zero artificial preservatives.',
+    fruit: 'starfruit' as const,
+    title: 'Gold-Framed Fruit Baskets',
+    desc: 'Our signature decor detail — circular woven baskets mounted in gold picture frames with golden yellow backing.',
   },
   {
-    icon: '🥭',
-    title: 'Natural Cold-Pressed Juices',
-    desc: 'Freshly squeezed fruit juices packed with vitamins and natural sweetness.',
+    fruit: 'pineapple' as const,
+    title: 'Candy-Stripe Cup Pyramids',
+    desc: 'Stacks of red-and-white striped paper cups lined up on glass shelves against warm dark wood paneling.',
   },
   {
-    icon: '👑',
-    title: 'Hyderabadi Specialty Desserts',
-    desc: 'Famous for authentic Apricot Delight, Kurbani ka Meeta & Double ka Meeta.',
+    fruit: 'guava' as const,
+    title: 'Yellow Walk-Up Window',
+    desc: 'Serve through our iconic bright yellow service window facing the vibrant outdoors.',
   },
   {
-    icon: '✨',
-    title: 'Muthangi Landmark Counter',
-    desc: 'Open till 12 AM every night for late night ice cream runs with family & friends.',
+    fruit: 'grapes' as const,
+    title: 'Official Red Menu Board',
+    desc: 'Extensive 40+ item board mounted next to the window featuring lassis, sundaes & Hyderabadi sweets.',
   },
 ];
 
 export default function StorySection() {
   return (
-    <section id="story" className="py-20 bg-gradient-to-b from-amber-50/40 via-rose-50/30 to-white relative overflow-hidden">
+    <section id="story" className="py-20 bg-wood-panels relative overflow-hidden text-[#FDF7EF] border-b-4 border-[#E6A119]">
+      {/* Top Red & White Candy Stripe Divider Accent */}
+      <div className="absolute top-0 left-0 right-0 h-2 bg-candy-stripe" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Store Gallery Visual Grid */}
-          <div className="lg:col-span-6 grid grid-cols-2 gap-4">
+          {/* Left Column: Real Shop Photography in Gold Picture Frames */}
+          <div className="lg:col-span-6 grid grid-cols-2 gap-5">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative h-64 sm:h-72 rounded-3xl overflow-hidden shadow-xl border-4 border-white group"
+              className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group bg-[#271810]"
             >
               <Image
                 src="/assets/shelves_freezers.jpg"
-                alt="Colour Ice Creams Freezers and Shelves"
+                alt="Colour Ice Creams Fruit Basket Wall and Freezers"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent flex items-end p-4 text-white">
-                <span className="font-heading font-extrabold text-sm">Wide Freezer Assortment</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Fruit Basket Wall & Freezers</span>
               </div>
             </motion.div>
 
@@ -60,7 +64,7 @@ export default function StorySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="relative h-64 sm:h-72 rounded-3xl overflow-hidden shadow-xl border-4 border-white group translate-y-6"
+              className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group translate-y-6 bg-[#271810]"
             >
               <Image
                 src="/assets/counter_interior.jpg"
@@ -68,8 +72,8 @@ export default function StorySection() {
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent flex items-end p-4 text-white">
-                <span className="font-heading font-extrabold text-sm">Fresh Counter Service</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Counter & Ceiling Beam</span>
               </div>
             </motion.div>
 
@@ -78,16 +82,16 @@ export default function StorySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="relative h-64 sm:h-72 rounded-3xl overflow-hidden shadow-xl border-4 border-white group"
+              className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group bg-[#271810]"
             >
               <Image
                 src="/assets/cup_pyramids.jpg"
-                alt="Colour Ice Creams Cup Display"
+                alt="Colour Ice Creams Cup Pyramids"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent flex items-end p-4 text-white">
-                <span className="font-heading font-extrabold text-sm">Signature Cups & Cones</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Candy-Stripe Cup Pyramids</span>
               </div>
             </motion.div>
 
@@ -96,30 +100,30 @@ export default function StorySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.45 }}
-              className="relative h-64 sm:h-72 rounded-3xl overflow-hidden shadow-xl border-4 border-white group translate-y-6"
+              className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group translate-y-6 bg-[#271810]"
             >
               <Image
                 src="/assets/menu_board.jpg"
-                alt="Colour Ice Creams Menu Board"
+                alt="Colour Ice Creams Official Menu Board"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent flex items-end p-4 text-white">
-                <span className="font-heading font-extrabold text-sm">Extensive Flavors Board</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Official Red Menu Board</span>
               </div>
             </motion.div>
           </div>
 
-          {/* Right Column: Story & Features */}
+          {/* Right Column: Story & Visual Identity Details */}
           <div className="lg:col-span-6 space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 font-extrabold text-xs tracking-wider uppercase border border-amber-200 shadow-sm"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E6A119]/20 text-[#FFD54F] font-fredoka font-semibold text-xs tracking-wider uppercase border border-[#FFD54F]/40 shadow-sm"
             >
-              <Sparkles className="w-4 h-4 text-amber-600" />
-              Our Story & Promise
+              <Sparkles className="w-4 h-4 text-[#FFD54F]" />
+              AUTHENTIC SHOP DECOR & EXPERIENCE
             </motion.div>
 
             <motion.h2
@@ -127,9 +131,9 @@ export default function StorySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl sm:text-5xl font-heading font-extrabold text-stone-900 tracking-tight"
+              className="text-4xl sm:text-5xl font-fredoka font-extrabold text-[#FDF7EF] tracking-tight leading-tight"
             >
-              Bringing <span className="bg-gradient-to-r from-rose-600 to-amber-500 bg-clip-text text-transparent">Sweet Happiness</span> to Muthangi
+              The Story Behind <span className="text-gradient-gold">Colour Ice Creams</span>
             </motion.h2>
 
             <motion.p
@@ -137,12 +141,12 @@ export default function StorySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-stone-600 text-base sm:text-lg leading-relaxed font-medium"
+              className="text-[#FDF7EF]/90 text-base sm:text-lg leading-relaxed font-quicksand font-medium"
             >
-              At <strong>Colour Ice Creams</strong>, we believe every scoop should bring pure joy! Located at the heart of Muthangi, Patancheru, we serve handcrafted ice creams, thick layered Thiranga lassis, cold-pressed juices, and traditional Hyderabadi delicacies like Apricot Delight.
+              Step right up to our yellow service window in <strong>Muthangi, Patancheru</strong>! Inside, you’ll find our warm teak wood walls adorned with gold-framed woven fruit baskets holding fresh pineapples, green grapes, peaches, guavas, and starfruit. Next to stacked candy-striped paper cup pyramids, we serve up thick layered lassis, natural fruit juices, and classic Hyderabadi Apricot Delight till midnight.
             </motion.p>
 
-            {/* Features List */}
+            {/* Highlights Grid with Framed Fruit Motif Icons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               {HIGHLIGHTS.map((item, index) => (
                 <motion.div
@@ -151,12 +155,12 @@ export default function StorySection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + index * 0.1 }}
-                  className="p-4 rounded-2xl bg-white/90 backdrop-blur-sm border border-stone-200/80 shadow-sm flex items-start gap-3"
+                  className="p-4 rounded-2xl bg-[#271810]/90 backdrop-blur-md border border-[#E6A119]/40 shadow-xl flex items-start gap-3.5 hover:border-[#FFD54F] transition-colors"
                 >
-                  <span className="text-2xl">{item.icon}</span>
+                  <FramedFruitIcon fruit={item.fruit} size="sm" />
                   <div>
-                    <h4 className="font-heading font-extrabold text-stone-900 text-sm">{item.title}</h4>
-                    <p className="text-stone-500 text-xs mt-0.5 leading-normal">{item.desc}</p>
+                    <h4 className="font-fredoka font-bold text-[#FFD54F] text-sm">{item.title}</h4>
+                    <p className="text-[#FDF7EF]/80 text-xs mt-1 leading-snug font-quicksand">{item.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -170,3 +174,4 @@ export default function StorySection() {
     </section>
   );
 }
+

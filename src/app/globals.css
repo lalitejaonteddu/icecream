@@ -1,39 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500;600;700;800&family=Fredoka:wght@600;700;800&family=Quicksand:wght@500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --font-fredoka: 'Fredoka', cursive, sans-serif;
-  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'DynaPuff', 'Fredoka', cursive, sans-serif;
+  --font-dynapuff: 'DynaPuff', 'Fredoka', cursive, sans-serif;
+  --font-fredoka: 'Fredoka', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
 
-  /* Custom Palette Tokens */
-  --raspberry-50: #FFF1F2;
-  --raspberry-100: #FFE4E6;
-  --raspberry-500: #F43F5E;
-  --raspberry-600: #E11D48;
-  --raspberry-700: #BE123C;
-
-  --mango-400: #FBBF24;
-  --mango-500: #F59E0B;
-  --mango-600: #D97706;
-
-  --mint-400: #2DD4BF;
-  --mint-500: #14B8A6;
-  --mint-600: #0D9488;
-
-  --vanilla-bg: #FFFDF7;
-  --vanilla-card: #FFFFFF;
+  /* Retro Candy Shop Color Palette */
+  --cream-base: #F6E7D3;
+  --cream-stripe: #FBF1E1;
+  --dark-brown: #3B2A1A;
+  --coral-red: #E15241;
+  --golden-yellow: #F0B23C;
+  --olive-green: #8FA85A;
+  --cream-text: #F6EEDD;
 }
 
 body {
-  font-family: var(--font-jakarta);
-  background-color: var(--vanilla-bg);
-  color: #1C1917;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  background-color: #F6E7D3;
+  color: #3B2A1A;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, .font-heading {
-  font-family: var(--font-fredoka);
+/* DynaPuff ultra-bubbly display font for Headings, Buttons, Badges, Nav, Ticker, Card Titles */
+h1, h2, h3, h4, button, .font-fredoka, .font-dynapuff, .font-chewy, .badge-text, .ticker-text {
+  font-family: 'DynaPuff', 'Fredoka', cursive, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+/* Soft Diagonal Stripe Background Pattern for Hero (~45° degree alternating cream base and lighter cream) */
+.bg-cream-stripes {
+  background-color: #F6E7D3;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #F6E7D3,
+    #F6E7D3 30px,
+    #FBF1E1 30px,
+    #FBF1E1 60px
+  );
+}
+
+/* Horizontal Gradient Text Fill for "COLOUR" & "SCOOP" (Orange -> Yellow -> Olive Green) */
+.text-gradient-scoop {
+  background: linear-gradient(90deg, #F06A3C 0%, #F0B23C 50%, #8FA85A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Retro Diner Button Styles with 3px Dark Chocolate Border & 3D Drop Shadow */
+.btn-primary {
+  background-color: #E15241;
+  color: #F6EEDD;
+  border: 3px solid #3B2A1A;
+  box-shadow: 0 5px 0 #3B2A1A;
+  border-radius: 9999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  transition: all 0.15s ease-in-out;
+}
+.btn-primary:hover {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #3B2A1A;
+}
+.btn-primary:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #3B2A1A;
+}
+
+.btn-secondary {
+  background-color: #F0B23C;
+  color: #3B2A1A;
+  border: 3px solid #3B2A1A;
+  box-shadow: 0 5px 0 #3B2A1A;
+  border-radius: 9999px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  transition: all 0.15s ease-in-out;
+}
+.btn-secondary:hover {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #3B2A1A;
+}
+.btn-secondary:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #3B2A1A;
+}
+
+/* Signature Dark Brown Border Outline Utility */
+.border-dark-brown {
+  border: 3px solid #3B2A1A;
+}
+
+/* Card Hover Jump Out Effect */
+.card-hover-jump {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+}
+.card-hover-jump:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* Infinite Marquee Ticker Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 /* Custom Scrollbar */
@@ -41,71 +135,16 @@ h1, h2, h3, h4, .font-heading {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #FFFBEB;
+  background: #F6E7D3;
 }
 ::-webkit-scrollbar-thumb {
-  background: #F43F5E;
-  border-radius: 10px;
+  background: #3B2A1A;
+  border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #BE123C;
+  background: #E15241;
 }
 
-/* Glassmorphism utility */
-.glass-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
-}
 
-.glass-nav {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(244, 63, 94, 0.12);
-}
 
-.neon-border-pink {
-  box-shadow: 0 0 15px rgba(225, 29, 72, 0.35);
-}
 
-.neon-border-yellow {
-  box-shadow: 0 0 15px rgba(245, 158, 11, 0.35);
-}
-
-.neon-border-teal {
-  box-shadow: 0 0 15px rgba(13, 148, 136, 0.35);
-}
-
-/* Custom pulse glow */
-@keyframes pulseGlow {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(245, 158, 11, 0.8);
-  }
-}
-
-.animate-pulse-glow {
-  animation: pulseGlow 2.5s infinite;
-}
-
-/* Keyframe for single ping pop */
-@keyframes pingOnce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.animate-ping-once {
-  animation: pingOnce 0.4s ease-out;
-}
