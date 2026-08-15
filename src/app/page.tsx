@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import FeatureCarousel from '../components/FeatureCarousel';
 import MarqueeStrip from '../components/MarqueeStrip';
 import BestSellers from '../components/BestSellers';
+import StorySection from '../components/StorySection';
 import ShopGallery from '../components/ShopGallery';
 import VisitUs from '../components/VisitUs';
 import ContactStrip from '../components/ContactStrip';
@@ -20,6 +21,9 @@ export default function Home() {
 
       {/* SECTION 1 — HERO */}
       <Hero />
+
+      {/* SECTION 2 — OUR STORY */}
+      <StorySection />
 
       {/* SECTION 2 — PURPLE FEATURE CAROUSEL (LEFT TO RIGHT) & LIQUID WAVE DIVIDER */}
       <FeatureCarousel />
