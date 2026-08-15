@@ -9,14 +9,14 @@ interface MenuItem {
 }
 
 const LASSIS_ITEMS: MenuItem[] = [
-  { name: 'Sweet Lassi', price: '₹90' },
-  { name: 'Salt Lassi', price: '₹90' },
-  { name: 'Punjabi Lassi', price: '₹120' },
-  { name: 'Badam Lassi', price: '₹120' },
-  { name: 'Patiyala Lassi', price: '₹120' },
-  { name: 'Nawabi Lassi', price: '₹120' },
-  { name: 'Thiranga Lassi', price: '₹120' },
-  { name: 'Mango Lassi', price: '₹120' },
+  { name: 'Sweet Lassi', price: '₹80' },
+  { name: 'Salt Lassi', price: '₹70' },
+  { name: 'Punjabi Lassi', price: '₹100' },
+  { name: 'Badam Lassi', price: '₹100' },
+  { name: 'Patiyala Lassi', price: '₹100' },
+  { name: 'Nawabi Lassi', price: '₹100' },
+  { name: 'Thiranga Lassi', price: '₹100' },
+  { name: 'Mango Lassi', price: '₹100' },
 ];
 
 const MILKSHAKES_ITEMS: MenuItem[] = [
@@ -29,12 +29,12 @@ const MILKSHAKES_ITEMS: MenuItem[] = [
 ];
 
 const THICKSHAKES_ITEMS: MenuItem[] = [
-  { name: 'Chocolate Oreo', price: '₹250' },
-  { name: 'Kit Kat Thickshake', price: '₹250' },
-  { name: 'Honey Five Star', price: '₹250' },
-  { name: 'Dry Fruit Thickshake', price: '₹250' },
-  { name: 'Choco Brownie', price: '₹250' },
-  { name: 'Ferrero Rocher', price: '₹250' },
+  { name: 'Chocolate Oreo', price: '₹190' },
+  { name: 'Kit Kat Thickshake', price: '₹190' },
+  { name: 'Honey Five Star', price: '₹190' },
+  { name: 'Dry Fruit Thickshake', price: '₹190' },
+  { name: 'Choco Brownie', price: '₹190' },
+  { name: 'Ferrero Rocher', price: '₹190' },
 ];
 
 const JUICES_ITEMS: MenuItem[] = [
@@ -48,12 +48,12 @@ const JUICES_ITEMS: MenuItem[] = [
 ];
 
 const MOCKTAILS_ITEMS: MenuItem[] = [
-  { name: 'Classic Mojito', price: '₹140' },
-  { name: 'Grape Fruit Twister', price: '₹140' },
-  { name: 'Kala Khatta Fruit', price: '₹140' },
-  { name: 'Orange Fruit', price: '₹140' },
-  { name: 'Strawberry Fruit', price: '₹140' },
-  { name: 'Pina Colada', price: '₹140' },
+  { name: 'Classic Mojito', price: '₹120' },
+  { name: 'Grape Fruit Twister', price: '₹120' },
+  { name: 'Kala Khatta Fruit', price: '₹120' },
+  { name: 'Orange Fruit', price: '₹120' },
+  { name: 'Strawberry Fruit', price: '₹120' },
+  { name: 'Pina Colada', price: '₹120' },
 ];
 
 const STONE_ICECREAM_ITEMS: MenuItem[] = [
