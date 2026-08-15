@@ -20,25 +20,25 @@ const LASSIS_ITEMS: MenuItem[] = [
 ];
 
 const MILKSHAKES_ITEMS: MenuItem[] = [
-  { name: 'Strawberry', price: '₹160' },
-  { name: 'Mango', price: '₹160' },
-  { name: 'Chocolate', price: '₹160' },
-  { name: 'Vanilla', price: '₹160' },
-  { name: 'Butter Scotch', price: '₹160' },
-  { name: 'Pista', price: '₹160' },
-  { name: 'Orange', price: '₹140' },
-  { name: 'Chaco Pie', price: '₹170' },
+  { name: 'Strawberry', price: '₹180' },
+  { name: 'Mango', price: '₹180' },
+  { name: 'Chocolate', price: '₹180' },
+  { name: 'Vanilla', price: '₹180' },
+  { name: 'Butter Scotch', price: '₹180' },
+  { name: 'Pista', price: '₹180' },
+  { name: 'Orange', price: '₹180' },
+  { name: 'Chaco Pie', price: '₹180' },
 ];
 
 const THICKSHAKES_ITEMS: MenuItem[] = [
-  { name: 'Chocolate Oreo', price: '₹190' },
-  { name: 'Kit Kat', price: '₹190' },
-  { name: 'Honey Five Star', price: '₹190' },
-  { name: 'Dry Fruit', price: '₹190' },
-  { name: 'Snickers', price: '₹190' },
-  { name: 'Choco Brownie', price: '₹190' },
-  { name: 'Ferrero Rocher', price: '₹190' },
-  { name: 'Nutella Oreo', price: '₹190' },
+  { name: 'Chocolate Oreo', price: '₹250' },
+  { name: 'Kit Kat', price: '₹250' },
+  { name: 'Honey Five Star', price: '₹250' },
+  { name: 'Dry Fruit', price: '₹250' },
+  { name: 'Snickers', price: '₹250' },
+  { name: 'Choco Brownie', price: '₹250' },
+  { name: 'Ferrero Rocher', price: '₹250' },
+  { name: 'Nutella Oreo', price: '₹250' },
 ];
 
 const JUICES_ITEMS: MenuItem[] = [
