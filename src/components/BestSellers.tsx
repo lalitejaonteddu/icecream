@@ -92,7 +92,7 @@ export default function BestSellers() {
           </motion.p>
         </div>
 
-        {/* 6 Solid Saturated Color Cards Grid */}
+        {/* 5 Solid Saturated Color Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1: Coral Red — Lassies */}
           <motion.div
@@ -104,11 +104,13 @@ export default function BestSellers() {
           >
             <div>
               <div className="flex justify-center mb-6 pt-2">
-                <img
-                  src="/assets/thiranga_lassi.png"
-                  alt="Lassi glass icon"
-                  className="w-28 h-36 object-contain drop-shadow-xl"
-                />
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#F6EEDD]/30 group cursor-pointer">
+                  <img
+                    src="/assets/category_lassi.jpg"
+                    alt="Lassies"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
 
               <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight">
@@ -148,11 +150,13 @@ export default function BestSellers() {
           >
             <div>
               <div className="flex justify-center mb-6 pt-2">
-                <img
-                  src="/assets/hero_3d_cone_clean_transparent.png"
-                  alt="Ice cream cone icon"
-                  className="w-28 h-36 object-contain drop-shadow-xl"
-                />
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
+                  <img
+                    src="/assets/category_scoops.jpg"
+                    alt="Scoops & Cones"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
 
               <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
@@ -192,11 +196,13 @@ export default function BestSellers() {
           >
             <div>
               <div className="flex justify-center mb-6 pt-2">
-                <img
-                  src="/assets/nutty_hub_sundae.png"
-                  alt="Fruit juice cup icon"
-                  className="w-28 h-36 object-contain drop-shadow-xl"
-                />
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
+                  <img
+                    src="/assets/category_juices.jpg"
+                    alt="Fresh Fruit Juices"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
 
               <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
@@ -236,11 +242,13 @@ export default function BestSellers() {
           >
             <div>
               <div className="flex justify-center mb-6 pt-2">
-                <img
-                  src="/assets/apricot_delight_dish.jpg"
-                  alt="Apricot Delight dessert"
-                  className="w-32 h-32 object-cover rounded-full border-4 border-[#F6EEDD]/60 shadow-2xl hover:scale-105 transition-transform duration-300"
-                />
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#F6EEDD]/30 group cursor-pointer">
+                  <img
+                    src="/assets/category_sweets.jpg"
+                    alt="Hyderabadi Sweets"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
 
               <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight">
@@ -280,11 +288,13 @@ export default function BestSellers() {
           >
             <div>
               <div className="flex justify-center mb-6 pt-2">
-                <img
-                  src="/assets/fruit_beast_sundae.png"
-                  alt="Signature sundae icon"
-                  className="w-28 h-36 object-contain drop-shadow-xl"
-                />
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
+                  <img
+                    src="/assets/category_sundaes.jpg"
+                    alt="Signature Sundaes"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
 
               <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
