@@ -237,9 +237,9 @@ export default function BestSellers() {
             <div>
               <div className="flex justify-center mb-6 pt-2">
                 <img
-                  src="/assets/apricot_delight_dessert_transparent.png"
-                  alt="Apricot Delight dessert icon"
-                  className="w-28 h-36 object-contain drop-shadow-xl"
+                  src="/assets/apricot_delight_dish.jpg"
+                  alt="Apricot Delight dessert"
+                  className="w-32 h-32 object-cover rounded-full border-4 border-[#F6EEDD]/60 shadow-2xl hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
