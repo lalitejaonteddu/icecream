@@ -19,6 +19,24 @@ const LASSIS_ITEMS: MenuItem[] = [
   { name: 'Mango Lassi', price: '₹120' },
 ];
 
+const MILKSHAKES_ITEMS: MenuItem[] = [
+  { name: 'Strawberry Milkshake', price: '₹180' },
+  { name: 'Mango Milkshake', price: '₹180' },
+  { name: 'Chocolate Milkshake', price: '₹180' },
+  { name: 'Vanilla Milkshake', price: '₹180' },
+  { name: 'Butter Scotch Milkshake', price: '₹180' },
+  { name: 'Pista Milkshake', price: '₹180' },
+];
+
+const THICKSHAKES_ITEMS: MenuItem[] = [
+  { name: 'Chocolate Oreo', price: '₹250' },
+  { name: 'Kit Kat Thickshake', price: '₹250' },
+  { name: 'Honey Five Star', price: '₹250' },
+  { name: 'Dry Fruit Thickshake', price: '₹250' },
+  { name: 'Choco Brownie', price: '₹250' },
+  { name: 'Ferrero Rocher', price: '₹250' },
+];
+
 const JUICES_ITEMS: MenuItem[] = [
   { name: 'Watermelon Juice', price: '₹180' },
   { name: 'Papaya Juice', price: '₹180' },
@@ -27,6 +45,33 @@ const JUICES_ITEMS: MenuItem[] = [
   { name: 'Pomegranate Juice', price: '₹180' },
   { name: 'Fresh Lime Soda', price: '₹80' },
   { name: 'Fruit Bowl', price: '₹250' },
+];
+
+const MOCKTAILS_ITEMS: MenuItem[] = [
+  { name: 'Classic Mojito', price: '₹140' },
+  { name: 'Grape Fruit Twister', price: '₹140' },
+  { name: 'Kala Khatta Fruit', price: '₹140' },
+  { name: 'Orange Fruit', price: '₹140' },
+  { name: 'Strawberry Fruit', price: '₹140' },
+  { name: 'Pina Colada', price: '₹140' },
+];
+
+const STONE_ICECREAM_ITEMS: MenuItem[] = [
+  { name: 'Candy Tasty (Kids)', price: '₹190' },
+  { name: 'Nutty Hub Concept', price: '₹250' },
+  { name: 'Fruit Fiesta Concept', price: '₹250' },
+  { name: 'Chocolate Overload', price: '₹250' },
+  { name: 'Hot Lava Blast', price: '₹250' },
+  { name: 'Mind Mellow Special', price: '₹290' },
+];
+
+const REGULAR_ICECREAM_ITEMS: MenuItem[] = [
+  { name: 'Vanilla Ice Cream', price: '₹160' },
+  { name: 'Mango Ice Cream', price: '₹160' },
+  { name: 'Strawberry Ice Cream', price: '₹160' },
+  { name: 'Pista Ice Cream', price: '₹160' },
+  { name: 'Butter Scotch', price: '₹160' },
+  { name: 'Dry Fruit Ice Cream', price: '₹160' },
 ];
 
 const DESSERTS_ITEMS: MenuItem[] = [
@@ -78,11 +123,11 @@ export default function BestSellers() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-xl font-quicksand font-semibold text-[#3B2A1A]/80 leading-relaxed"
           >
-            Over 30 flavours churned daily, thick creamy lassis, Hyderabadi sweets, fresh juices & signature sundaes. These are the ones people queue in the heat for.
+            Over 40 flavours churned daily, stone concepts, thick milkshakes, mocktails, creamy lassis, Hyderabadi sweets, fresh juices & signature sundaes.
           </motion.p>
         </div>
 
-        {/* 5 Solid Saturated Color Cards Grid */}
+        {/* 9 Solid Saturated Color Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1: Coral Red — Lassies */}
           <motion.div
@@ -130,7 +175,99 @@ export default function BestSellers() {
             </div>
           </motion.div>
 
-          {/* Card 3: Golden Yellow — Fresh Fruit Juices */}
+          {/* Card 2: Golden Yellow — Milk Shakes */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-[#F0B23C] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
+          >
+            <div>
+              <div className="flex justify-center mb-6 pt-2">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
+                  <img
+                    src="/assets/category_lassi.jpg"
+                    alt="Milk Shakes"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
+                Milk Shakes
+              </h3>
+
+              <div className="space-y-3 font-quicksand font-semibold text-base text-[#3B2A1A]">
+                {MILKSHAKES_ITEMS.map((item, idx) => (
+                  <div key={idx} className="flex items-baseline justify-between">
+                    <span className="shrink-0">{item.name}</span>
+                    <span className="flex-1 mx-2 border-b-2 border-dashed border-[#3B2A1A]/40 opacity-70" />
+                    <span className="font-fredoka font-extrabold text-lg shrink-0">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-[#3B2A1A]/20 flex justify-end">
+              <a
+                href="https://wa.me/919177235000?text=Hi%20Colour%20Ice%20Creams,%20I%20want%20to%20order%20Milk%20Shakes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#3B2A1A] hover:underline"
+              >
+                Order Milkshakes →
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Card 3: Olive Green — Thickshakes */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="bg-[#8FA85A] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
+          >
+            <div>
+              <div className="flex justify-center mb-6 pt-2">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
+                  <img
+                    src="/assets/category_sundaes.jpg"
+                    alt="Thickshakes"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
+                Thickshakes
+              </h3>
+
+              <div className="space-y-3 font-quicksand font-semibold text-base text-[#3B2A1A]">
+                {THICKSHAKES_ITEMS.map((item, idx) => (
+                  <div key={idx} className="flex items-baseline justify-between">
+                    <span className="shrink-0">{item.name}</span>
+                    <span className="flex-1 mx-2 border-b-2 border-dashed border-[#3B2A1A]/40 opacity-70" />
+                    <span className="font-fredoka font-extrabold text-lg shrink-0">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-[#3B2A1A]/20 flex justify-end">
+              <a
+                href="https://wa.me/919177235000?text=Hi%20Colour%20Ice%20Creams,%20I%20want%20to%20order%20Thickshakes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#3B2A1A] hover:underline"
+              >
+                Order Thickshakes →
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Card 4: Golden Yellow — Fresh Fruit Juices */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -176,12 +313,150 @@ export default function BestSellers() {
             </div>
           </motion.div>
 
-          {/* Card 4: Coral Red — Hyderabadi Desserts */}
+          {/* Card 5: Olive Green — Mocktails */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            className="bg-[#8FA85A] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
+          >
+            <div>
+              <div className="flex justify-center mb-6 pt-2">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
+                  <img
+                    src="/assets/category_juices.jpg"
+                    alt="Mocktails"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
+                Mocktails
+              </h3>
+
+              <div className="space-y-3 font-quicksand font-semibold text-base text-[#3B2A1A]">
+                {MOCKTAILS_ITEMS.map((item, idx) => (
+                  <div key={idx} className="flex items-baseline justify-between">
+                    <span className="shrink-0">{item.name}</span>
+                    <span className="flex-1 mx-2 border-b-2 border-dashed border-[#3B2A1A]/40 opacity-70" />
+                    <span className="font-fredoka font-extrabold text-lg shrink-0">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-[#3B2A1A]/20 flex justify-end">
+              <a
+                href="https://wa.me/919177235000?text=Hi%20Colour%20Ice%20Creams,%20I%20want%20to%20order%20Mocktails"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#3B2A1A] hover:underline"
+              >
+                Order Mocktails →
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Card 6: Coral Red — Stone Ice Creams */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="bg-[#E15241] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#F6EEDD] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
+          >
+            <div>
+              <div className="flex justify-center mb-6 pt-2">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#F6EEDD]/30 group cursor-pointer">
+                  <img
+                    src="/assets/category_scoops.jpg"
+                    alt="Stone Ice Creams"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight">
+                Stone Ice Creams
+              </h3>
+
+              <div className="space-y-3 font-quicksand font-semibold text-base">
+                {STONE_ICECREAM_ITEMS.map((item, idx) => (
+                  <div key={idx} className="flex items-baseline justify-between">
+                    <span className="shrink-0">{item.name}</span>
+                    <span className="flex-1 mx-2 border-b-2 border-dashed border-[#F6EEDD]/40 opacity-70" />
+                    <span className="font-fredoka font-extrabold text-lg shrink-0">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-[#F6EEDD]/20 flex justify-end">
+              <a
+                href="https://wa.me/919177235000?text=Hi%20Colour%20Ice%20Creams,%20I%20want%20to%20order%20Stone%20Ice%20Creams"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#F6EEDD] hover:underline"
+              >
+                Order Stone Creams →
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Card 7: Olive Green — Regular Ice Cream */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="bg-[#8FA85A] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
+          >
+            <div>
+              <div className="flex justify-center mb-6 pt-2">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
+                  <img
+                    src="/assets/category_scoops.jpg"
+                    alt="Regular Ice Cream"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
+                Regular Ice Cream
+              </h3>
+
+              <div className="space-y-3 font-quicksand font-semibold text-base text-[#3B2A1A]">
+                {REGULAR_ICECREAM_ITEMS.map((item, idx) => (
+                  <div key={idx} className="flex items-baseline justify-between">
+                    <span className="shrink-0">{item.name}</span>
+                    <span className="flex-1 mx-2 border-b-2 border-dashed border-[#3B2A1A]/40 opacity-70" />
+                    <span className="font-fredoka font-extrabold text-lg shrink-0">{item.price}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-[#3B2A1A]/20 flex justify-end">
+              <a
+                href="https://wa.me/919177235000?text=Hi%20Colour%20Ice%20Creams,%20I%20want%20to%20order%20Regular%20Ice%20Cream"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#3B2A1A] hover:underline"
+              >
+                Order Ice Cream →
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Card 8: Coral Red — Hyderabadi Sweets */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="bg-[#E15241] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#F6EEDD] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
           >
             <div>
@@ -222,13 +497,13 @@ export default function BestSellers() {
             </div>
           </motion.div>
 
-          {/* Card 5: Olive Green — Signature Sundaes */}
+          {/* Card 9: Golden Yellow — Signature Sundaes */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="bg-[#8FA85A] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="bg-[#F0B23C] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
           >
             <div>
               <div className="flex justify-center mb-6 pt-2">
