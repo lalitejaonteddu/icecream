@@ -26,7 +26,7 @@ export const BEST_SELLERS: MenuItem[] = [
   },
   {
     id: 'fruit-beast',
-    name: 'Fruit Beast',
+    name: 'Fruit Feast',
     category: 'bestsellers',
     price: 260,
     description: 'Monster bowl overflowing with fresh dragon fruit, kiwi, mango chunks, pomegranate, and cold vanilla cream.',

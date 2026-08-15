@@ -82,7 +82,7 @@ const DESSERTS_ITEMS: MenuItem[] = [
 
 const SUNDAES_ITEMS: MenuItem[] = [
   { name: 'Nutty Hub Sundae', price: '₹140' },
-  { name: 'Fruit Beast Sundae', price: '₹160' },
+  { name: 'Fruit Feast Sundae', price: '₹160' },
   { name: 'Chocolate Overload', price: '₹180' },
   { name: 'You Must Be Crazy', price: '₹190' },
   { name: 'BDC Pastry Sundae', price: '₹170' },
