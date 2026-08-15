@@ -84,12 +84,12 @@ export default function Hero() {
         initial={{ y: 80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.7, type: 'spring', stiffness: 120 }}
-        className="mt-10 relative w-full max-w-sm sm:max-w-lg md:max-w-2xl flex justify-center items-end z-10 -mb-2"
+        className="mt-10 relative w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center items-end z-10 -mb-2"
       >
         <img
-          src="/assets/hero_3d_splash_transparent.png"
-          alt="Colour Ice Creams 3D Splash Cones"
-          className="w-auto max-h-[360px] sm:max-h-[460px] object-contain filter drop-shadow-[0_15px_25px_rgba(59,42,26,0.25)]"
+          src="/assets/hero_3d_cone_clean_transparent.png"
+          alt="Colour Ice Creams 3D Treat Cone"
+          className="w-auto max-h-[360px] sm:max-h-[440px] object-contain filter drop-shadow-[0_15px_25px_rgba(59,42,26,0.25)]"
         />
       </motion.div>
     </section>
