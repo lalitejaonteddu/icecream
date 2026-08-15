@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500;600;700;800&family=Fredoka:wght@600;700;800&family=Quicksand:wght@500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --font-display: 'DynaPuff', 'Fredoka', cursive, sans-serif;
-  --font-dynapuff: 'DynaPuff', 'Fredoka', cursive, sans-serif;
-  --font-fredoka: 'Fredoka', sans-serif;
-  --font-quicksand: 'Quicksand', sans-serif;
+  --font-display: var(--font-dynapuff), var(--font-fredoka), cursive, sans-serif;
+  --font-dynapuff: var(--font-dynapuff), var(--font-fredoka), cursive, sans-serif;
+  --font-fredoka: var(--font-fredoka), sans-serif;
+  --font-quicksand: var(--font-quicksand), sans-serif;
 
   /* Retro Candy Shop Color Palette */
   --cream-base: #F6E7D3;

@@ -140,8 +140,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#F6EEDD]/30 group cursor-pointer">
                   <img
-                    src="/assets/category_lassi.jpg"
+                    src="/assets/category_lassi.webp"
                     alt="Lassies"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -186,8 +189,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_milkshakes.jpg"
+                    src="/assets/category_milkshakes.webp"
                     alt="Milk Shakes"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -232,8 +238,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_thickshakes.jpg"
+                    src="/assets/category_thickshakes.webp"
                     alt="Thickshakes"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -278,8 +287,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_juices.jpg"
+                    src="/assets/category_juices.webp"
                     alt="Fresh Fruit Juices"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -324,8 +336,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_mocktails.jpg"
+                    src="/assets/category_mocktails.webp"
                     alt="Mocktails"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -370,8 +385,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#F6EEDD]/30 group cursor-pointer">
                   <img
-                    src="/assets/category_scoops.jpg"
+                    src="/assets/category_scoops.webp"
                     alt="Stone Ice Creams"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -416,8 +434,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_scoops.jpg"
+                    src="/assets/category_scoops.webp"
                     alt="Regular Ice Cream"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -462,8 +483,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#F6EEDD]/30 group cursor-pointer">
                   <img
-                    src="/assets/category_sweets.jpg"
+                    src="/assets/category_sweets.webp"
                     alt="Hyderabadi Sweets"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -508,8 +532,11 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_sundaes.jpg"
+                    src="/assets/category_sundaes.webp"
                     alt="Signature Sundaes"
+                    width={144}
+                    height={144}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

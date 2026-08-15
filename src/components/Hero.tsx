@@ -87,8 +87,12 @@ export default function Hero() {
         className="mt-10 relative w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center items-end z-10 -mb-2"
       >
         <img
-          src="/assets/hero_3d_cone_clean_transparent.png"
+          src="/assets/hero_3d_cone_clean_transparent.webp"
           alt="Colour Ice Creams 3D Treat Cone"
+          width={440}
+          height={440}
+          loading="eager"
+          fetchPriority="high"
           className="w-auto max-h-[360px] sm:max-h-[440px] object-contain filter drop-shadow-[0_15px_25px_rgba(59,42,26,0.25)]"
         />
       </motion.div>

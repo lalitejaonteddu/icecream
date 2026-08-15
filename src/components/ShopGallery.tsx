@@ -16,42 +16,42 @@ const GALLERY_ITEMS: GalleryItem[] = [
     id: 'storefront',
     title: 'Yellow Service Window',
     caption: 'Our storefront in Muthangi, Patancheru',
-    imageSrc: '/assets/storefront.jpg',
+    imageSrc: '/assets/storefront.webp',
     imageAlt: 'Storefront with yellow service window and menu board',
   },
   {
     id: 'cup-pyramids',
     title: 'Candy-Stripe Cup Pyramids',
     caption: 'Signature takeaway cups stacked on glass shelves',
-    imageSrc: '/assets/cup_pyramids.jpg',
+    imageSrc: '/assets/cup_pyramids.webp',
     imageAlt: 'Stacked red and white striped cups on glass shelves with gold frames',
   },
   {
     id: 'fruit-baskets-wall',
     title: 'Fruit Decor Wall',
     caption: 'Gold-framed fruit baskets and ice cream freezers',
-    imageSrc: '/assets/shelves_freezers.jpg',
+    imageSrc: '/assets/shelves_freezers.webp',
     imageAlt: 'Wall of gold framed fruit baskets and ice cream freezers',
   },
   {
     id: 'counter-interior',
     title: 'Parlour Service Counter',
     caption: 'Clean prep station with warm wooden paneling',
-    imageSrc: '/assets/counter_interior.jpg',
+    imageSrc: '/assets/counter_interior.webp',
     imageAlt: 'Counter interior view with yellow ceiling beam and service window',
   },
   {
     id: 'menu-board',
     title: 'Wall Menu Listing',
     caption: 'Complete list of ice creams, lassis, juices & sweets',
-    imageSrc: '/assets/menu_board.jpg',
+    imageSrc: '/assets/menu_board.webp',
     imageAlt: 'Official red menu board mounted next to the walk-up window',
   },
   {
     id: 'freezer-display',
     title: 'Scoop Display Freezer',
     caption: 'Fresh gelato and ice cream churned daily',
-    imageSrc: '/assets/shop_freezer_display.jpg',
+    imageSrc: '/assets/shop_freezer_display.webp',
     imageAlt: 'Ice cream display freezer showcasing colorful freshly churned scoops',
   },
 ];
@@ -115,6 +115,9 @@ export default function ShopGallery() {
                 <img
                   src={item.imageSrc}
                   alt={item.imageAlt}
+                  width={480}
+                  height={360}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
 

@@ -55,9 +55,10 @@ export default function StorySection() {
               className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group bg-[#2A1E13]"
             >
               <Image
-                src="/assets/shelves_freezers.jpg"
+                src="/assets/shelves_freezers.webp"
                 alt="Colour Ice Creams Artisanal Display Wall"
                 fill
+                sizes="(max-width: 768px) 50vw, 300px"
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#F0B23C]">
@@ -73,9 +74,10 @@ export default function StorySection() {
               className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group translate-y-6 bg-[#2A1E13]"
             >
               <Image
-                src="/assets/counter_interior.jpg"
+                src="/assets/counter_interior.webp"
                 alt="Colour Ice Creams Main Service Counter"
                 fill
+                sizes="(max-width: 768px) 50vw, 300px"
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#F0B23C]">
@@ -91,9 +93,10 @@ export default function StorySection() {
               className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group bg-[#2A1E13]"
             >
               <Image
-                src="/assets/cup_pyramids.jpg"
+                src="/assets/cup_pyramids.webp"
                 alt="Colour Ice Creams Signature Dessert Counter"
                 fill
+                sizes="(max-width: 768px) 50vw, 300px"
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#F0B23C]">
@@ -109,9 +112,10 @@ export default function StorySection() {
               className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group translate-y-6 bg-[#2A1E13]"
             >
               <Image
-                src="/assets/shop_freezer_display.jpg"
+                src="/assets/shop_freezer_display.webp"
                 alt="Colour Ice Creams Fresh Ice Cream Display"
                 fill
+                sizes="(max-width: 768px) 50vw, 300px"
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#F0B23C]">
