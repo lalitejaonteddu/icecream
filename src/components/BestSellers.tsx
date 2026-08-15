@@ -19,15 +19,6 @@ const LASSIS_ITEMS: MenuItem[] = [
   { name: 'Mango Lassi', price: '₹120' },
 ];
 
-const SCOOPS_ITEMS: MenuItem[] = [
-  { name: 'Triple Scoop Waffle Cone', price: '₹120' },
-  { name: 'Vanilla Bean Gelato', price: '₹80' },
-  { name: 'Strawberry Crunch', price: '₹90' },
-  { name: 'Belgian Dark Chocolate', price: '₹110' },
-  { name: 'Royal Pista Kulfi Scoop', price: '₹100' },
-  { name: 'Alphonso Mango Gelato', price: '₹100' },
-];
-
 const JUICES_ITEMS: MenuItem[] = [
   { name: 'Watermelon Juice', price: '₹180' },
   { name: 'Papaya Juice', price: '₹180' },
@@ -136,52 +127,6 @@ export default function BestSellers() {
                 className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#F6EEDD] hover:underline"
               >
                 Order Lassis →
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Card 2: Olive Green — Ice Cream Scoops & Cones */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-[#8FA85A] rounded-[32px] p-8 flex flex-col justify-between card-hover-jump text-[#3B2A1A] border-[3px] border-[#3B2A1A] shadow-[0_8px_0_#3B2A1A] relative overflow-hidden"
-          >
-            <div>
-              <div className="flex justify-center mb-6 pt-2">
-                <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
-                  <img
-                    src="/assets/category_scoops.jpg"
-                    alt="Scoops & Cones"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
-
-              <h3 className="font-fredoka text-4xl font-extrabold mb-6 tracking-tight text-[#3B2A1A]">
-                Scoops & Cones
-              </h3>
-
-              <div className="space-y-3 font-quicksand font-semibold text-base text-[#3B2A1A]">
-                {SCOOPS_ITEMS.map((item, idx) => (
-                  <div key={idx} className="flex items-baseline justify-between">
-                    <span className="shrink-0">{item.name}</span>
-                    <span className="flex-1 mx-2 border-b-2 border-dashed border-[#3B2A1A]/40 opacity-70" />
-                    <span className="font-fredoka font-extrabold text-lg shrink-0">{item.price}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mt-8 pt-4 border-t border-[#3B2A1A]/20 flex justify-end">
-              <a
-                href="https://wa.me/919177235000?text=Hi%20Colour%20Ice%20Creams,%20I%20want%20to%20order%20Ice%20Cream%20Scoops"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-fredoka text-xs font-bold uppercase tracking-wider text-[#3B2A1A] hover:underline"
-              >
-                Order Scoops →
               </a>
             </div>
           </motion.div>
