@@ -11,10 +11,12 @@ interface MenuItem {
 const LASSIS_ITEMS: MenuItem[] = [
   { name: 'Sweet Lassi', price: '₹90' },
   { name: 'Salt Lassi', price: '₹90' },
-  { name: 'Thiranga Lassi (3-Layer)', price: '₹110' },
-  { name: 'Mango Lassi', price: '₹110' },
-  { name: 'Rose Badam Lassi', price: '₹100' },
-  { name: 'Shahi Malai Lassi', price: '₹120' },
+  { name: 'Punjabi Lassi', price: '₹120' },
+  { name: 'Badam Lassi', price: '₹120' },
+  { name: 'Patiyala Lassi', price: '₹120' },
+  { name: 'Nawabi Lassi', price: '₹120' },
+  { name: 'Thiranga Lassi', price: '₹120' },
+  { name: 'Mango Lassi', price: '₹120' },
 ];
 
 const SCOOPS_ITEMS: MenuItem[] = [
@@ -27,18 +29,20 @@ const SCOOPS_ITEMS: MenuItem[] = [
 ];
 
 const JUICES_ITEMS: MenuItem[] = [
-  { name: 'Watermelon Cold Juice', price: '₹180' },
-  { name: 'Fresh Papaya Delight', price: '₹180' },
-  { name: 'Cold-Pressed Mango', price: '₹180' },
-  { name: 'Fruit Beast Shake', price: '₹160' },
-  { name: 'Chikoo Cream Shake', price: '₹150' },
-  { name: 'Tender Coconut Malai', price: '₹170' },
+  { name: 'Watermelon Juice', price: '₹180' },
+  { name: 'Papaya Juice', price: '₹180' },
+  { name: 'Kiwi Juice', price: '₹180' },
+  { name: 'Fruit Punch', price: '₹180' },
+  { name: 'Pomegranate Juice', price: '₹180' },
+  { name: 'Fresh Lime Soda', price: '₹80' },
+  { name: 'Fruit Bowl', price: '₹250' },
 ];
 
 const DESSERTS_ITEMS: MenuItem[] = [
-  { name: 'Apricot Delight (Qubani)', price: '₹180' },
-  { name: 'Double Ka Meeta', price: '₹160' },
-  { name: 'Kaddu Ka Kheer', price: '₹160' },
+  { name: 'Apricot Delight', price: '₹250' },
+  { name: 'Kurbani ka Meeta with Ice Cream', price: '₹190' },
+  { name: 'Double ka Meeta', price: '₹160' },
+  { name: 'Kaddu ka Kheer', price: '₹160' },
 ];
 
 const SUNDAES_ITEMS: MenuItem[] = [
