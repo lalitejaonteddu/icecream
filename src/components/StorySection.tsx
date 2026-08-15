@@ -103,13 +103,13 @@ export default function StorySection() {
               className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl gold-picture-frame group translate-y-6 bg-[#271810]"
             >
               <Image
-                src="/assets/menu_board.jpg"
-                alt="Colour Ice Creams Official Store Catalog"
+                src="/assets/shop_freezer_display.jpg"
+                alt="Colour Ice Creams Fresh Ice Cream Display"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
-                <span className="font-fredoka font-bold text-xs sm:text-sm">Official Store Catalog</span>
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Fresh Ice Cream Display</span>
               </div>
             </motion.div>
           </div>
