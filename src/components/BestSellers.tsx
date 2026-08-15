@@ -39,9 +39,6 @@ const DESSERTS_ITEMS: MenuItem[] = [
   { name: 'Apricot Delight (Qubani)', price: '₹180' },
   { name: 'Double Ka Meeta', price: '₹160' },
   { name: 'Kaddu Ka Kheer', price: '₹160' },
-  { name: 'Matka Kheer Special', price: '₹140' },
-  { name: 'Shahi Tukda Sundae', price: '₹170' },
-  { name: 'Malai Phirni Bowl', price: '₹150' },
 ];
 
 const SUNDAES_ITEMS: MenuItem[] = [
