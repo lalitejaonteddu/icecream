@@ -9,8 +9,8 @@ interface MenuItem {
 }
 
 const LASSIS_ITEMS: MenuItem[] = [
-  { name: 'Sweet Lassi', price: '₹80' },
-  { name: 'Salt Lassi', price: '₹70' },
+  { name: 'Sweet Lassi', price: '₹90' },
+  { name: 'Salt Lassi', price: '₹90' },
   { name: 'Punjabi Lassi', price: '₹100' },
   { name: 'Badam Lassi', price: '₹100' },
   { name: 'Patiyala Lassi', price: '₹100' },
