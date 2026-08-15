@@ -86,7 +86,6 @@ const SUNDAES_ITEMS: MenuItem[] = [
   { name: 'Chocolate Overload', price: '₹180' },
   { name: 'You Must Be Crazy', price: '₹190' },
   { name: 'BDC Pastry Sundae', price: '₹170' },
-  { name: 'Death By Chocolate', price: '₹200' },
 ];
 
 export default function BestSellers() {
@@ -187,7 +186,7 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_lassi.jpg"
+                    src="/assets/category_milkshakes.jpg"
                     alt="Milk Shakes"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -233,7 +232,7 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_sundaes.jpg"
+                    src="/assets/category_thickshakes.jpg"
                     alt="Thickshakes"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -325,7 +324,7 @@ export default function BestSellers() {
               <div className="flex justify-center mb-6 pt-2">
                 <div className="w-36 h-36 rounded-full overflow-hidden border-[4px] border-[#3B2A1A] shadow-xl ring-4 ring-[#3B2A1A]/20 group cursor-pointer">
                   <img
-                    src="/assets/category_juices.jpg"
+                    src="/assets/category_mocktails.jpg"
                     alt="Mocktails"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
