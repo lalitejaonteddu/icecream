@@ -52,12 +52,12 @@ const JUICES_ITEMS: MenuItem[] = [
 ];
 
 const MOCKTAILS_ITEMS: MenuItem[] = [
-  { name: 'Classic Mojito', price: '₹120' },
-  { name: 'Grape Fruit Twister', price: '₹120' },
-  { name: 'Kala Khatta Fruit', price: '₹120' },
-  { name: 'Orange Fruit', price: '₹120' },
-  { name: 'Strawberry Fruit', price: '₹120' },
-  { name: 'Pina Colada', price: '₹120' },
+  { name: 'Classic Mojito', price: '₹140' },
+  { name: 'Grape Fruit Twister', price: '₹140' },
+  { name: 'Kala Khatta Fruit', price: '₹140' },
+  { name: 'Orange Fruit', price: '₹140' },
+  { name: 'Strawberry Fruit', price: '₹140' },
+  { name: 'Pina Colada', price: '₹140' },
 ];
 
 const STONE_ICECREAM_ITEMS: MenuItem[] = [
