@@ -31,7 +31,6 @@ const JUICES_ITEMS: MenuItem[] = [
 
 const DESSERTS_ITEMS: MenuItem[] = [
   { name: 'Apricot Delight', price: '₹250' },
-  { name: 'Kurbani ka Meeta with Ice Cream', price: '₹190' },
   { name: 'Double ka Meeta', price: '₹160' },
   { name: 'Kaddu ka Kheer', price: '₹160' },
 ];
