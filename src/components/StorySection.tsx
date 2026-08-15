@@ -9,23 +9,23 @@ import FramedFruitIcon from './FramedFruitIcon';
 const HIGHLIGHTS = [
   {
     fruit: 'starfruit' as const,
-    title: 'Gold-Framed Fruit Baskets',
-    desc: 'Our signature decor detail — circular woven baskets mounted in gold picture frames with golden yellow backing.',
+    title: 'Artisanal Recipes',
+    desc: 'Prepared fresh daily using pure milk, rich cream, and genuine fruit extracts.',
   },
   {
     fruit: 'pineapple' as const,
-    title: 'Candy-Stripe Cup Pyramids',
-    desc: 'Stacks of red-and-white striped paper cups lined up on glass shelves against warm dark wood paneling.',
+    title: 'Authentic Hyderabadi Sweets',
+    desc: 'Handcrafted Double ka Meetha, Kaddu ka Kheer & classic Apricot Delight.',
   },
   {
     fruit: 'guava' as const,
-    title: 'Yellow Walk-Up Window',
-    desc: 'Serve through our iconic bright yellow service window facing the vibrant outdoors.',
+    title: 'Walk-Up Storefront',
+    desc: 'Convenient walk-up service window in Muthangi, Patancheru open 11:00 AM to midnight.',
   },
   {
     fruit: 'grapes' as const,
-    title: 'Official Red Menu Board',
-    desc: 'Extensive 40+ item board mounted next to the window featuring lassis, sundaes & Hyderabadi sweets.',
+    title: '40+ Signature Flavours',
+    desc: 'Wide selection of Stone concepts, thick milkshakes, mocktails & thick creamy lassis.',
   },
 ];
 
@@ -50,12 +50,12 @@ export default function StorySection() {
             >
               <Image
                 src="/assets/shelves_freezers.jpg"
-                alt="Colour Ice Creams Fruit Basket Wall and Freezers"
+                alt="Colour Ice Creams Artisanal Display Wall"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
-                <span className="font-fredoka font-bold text-xs sm:text-sm">Fruit Basket Wall & Freezers</span>
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Artisanal Display Wall</span>
               </div>
             </motion.div>
 
@@ -68,12 +68,12 @@ export default function StorySection() {
             >
               <Image
                 src="/assets/counter_interior.jpg"
-                alt="Colour Ice Creams Counter Interior"
+                alt="Colour Ice Creams Main Service Counter"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
-                <span className="font-fredoka font-bold text-xs sm:text-sm">Counter & Ceiling Beam</span>
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Main Service Counter</span>
               </div>
             </motion.div>
 
@@ -86,12 +86,12 @@ export default function StorySection() {
             >
               <Image
                 src="/assets/cup_pyramids.jpg"
-                alt="Colour Ice Creams Cup Pyramids"
+                alt="Colour Ice Creams Signature Dessert Counter"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
-                <span className="font-fredoka font-bold text-xs sm:text-sm">Candy-Stripe Cup Pyramids</span>
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Signature Dessert Counter</span>
               </div>
             </motion.div>
 
@@ -104,12 +104,12 @@ export default function StorySection() {
             >
               <Image
                 src="/assets/menu_board.jpg"
-                alt="Colour Ice Creams Official Menu Board"
+                alt="Colour Ice Creams Official Store Catalog"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-[#FFD54F]">
-                <span className="font-fredoka font-bold text-xs sm:text-sm">Official Red Menu Board</span>
+                <span className="font-fredoka font-bold text-xs sm:text-sm">Official Store Catalog</span>
               </div>
             </motion.div>
           </div>
@@ -123,7 +123,7 @@ export default function StorySection() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E6A119]/20 text-[#FFD54F] font-fredoka font-semibold text-xs tracking-wider uppercase border border-[#FFD54F]/40 shadow-sm"
             >
               <Sparkles className="w-4 h-4 text-[#FFD54F]" />
-              AUTHENTIC SHOP DECOR & EXPERIENCE
+              OUR BRAND STORY & CRAFTSMANSHIP
             </motion.div>
 
             <motion.h2
@@ -143,7 +143,7 @@ export default function StorySection() {
               transition={{ delay: 0.2 }}
               className="text-[#FDF7EF]/90 text-base sm:text-lg leading-relaxed font-quicksand font-medium"
             >
-              Step right up to our yellow service window in <strong>Muthangi, Patancheru</strong>! Inside, you’ll find our warm teak wood walls adorned with gold-framed woven fruit baskets holding fresh pineapples, green grapes, peaches, guavas, and starfruit. Next to stacked candy-striped paper cup pyramids, we serve up thick layered lassis, natural fruit juices, and classic Hyderabadi Apricot Delight till midnight.
+              Founded with a passion for authentic flavours and premium ingredients, <strong>Colour Ice Creams</strong> brings together traditional Indian recipes and modern dessert craftsmanship at our location in <strong>Muthangi, Patancheru</strong>. From rich thick lassis and fresh fruit juices to authentic Hyderabadi Apricot Delight and stone ice creams, we serve every treat with uncompromising quality and warm hospitality daily from 11:00 AM to midnight.
             </motion.p>
 
             {/* Highlights Grid with Framed Fruit Motif Icons */}
